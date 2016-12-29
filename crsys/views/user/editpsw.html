@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>账号设置</title>
+    <title>修改密码</title>
     <link rel="stylesheet" href="../../static/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../static/css/common.css">
     <script src="../../static/js/holder.min.js"></script>
@@ -54,10 +54,6 @@
                             <li class=""><a href="">注销</a></li>
                         </ul>
                     </li>
-                </ul>
-                <ul>
-
-
                 </ul>
             </div>
         </div>
@@ -120,8 +116,11 @@
                             <div class="panel-body">
                             </div>
                             <ul class="list-group">
-                                <li class="list-group-item"><a href="info.html" class=" btn-block ">我的信息</a></li>
-                                <li class="list-group-item"><a href="editpsw.html" class=" btn-block">修改密码</a></li>
+                                <li class="list-group-item"><a href="" class=" btn-block ">我的信息</a></li>
+                                <li class="list-group-item"><a href="" class=" btn-block">联系方式</a></li>
+                                <li class="list-group-item"><a href="" class=" btn-block">修改密码</a></li>
+                                <li class="list-group-item"><a href="" class=" btn-block">设置安全保护</a></li>
+                                <li class="list-group-item"><a href="" class=" btn-block">名片</a></li>
                             </ul>
                         </div>
                     </div>
@@ -169,7 +168,35 @@
                     </ol>
                 </div>
                 <div class="main-body">
-
+                    <div class="alert alert-warning alert-dismissible" role="alert">
+                        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                    </div>
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="pwd" class="col-sm-2 control-label">旧密码：</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control col-md-5" id="pwd" placeholder="pa">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="newpwd" class="col-sm-2 control-label">新密码：</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="newpwd" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="newpwded" class="col-sm-2 control-label">确认密码：</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="newpwded" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-primary btn-lg">提交</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
