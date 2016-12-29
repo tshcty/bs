@@ -16,44 +16,75 @@
 <body>
 <!--  header部分：top nav  start-->
 <div id="header-wrpper">
-    <div class="container-fluid top">    <!--top部分-->
-        <div class="row">
-            <div class="col-md-8 col-sm-8 col-sm-offset-4 col-md-offset-4">
-                <div class="pull-right bg-primary">
-                    <ul>
-                        <li class="btn btn-warning"><a href="../index/index.html">xx竞赛网</a></li>
-                        <li class=" btn btn-warning"><a href="../index/competition.html">竞赛大全</a></li>
-                        <li class=" btn btn-warning"><a href="../index/about.html">关于我们</a></li>
-                        <li class=" btn btn-warning"><a href="">用户</a></li>
-                        <li class=" btn btn-warning"><a href="">注销</a></li>
-                    </ul>
-                </div>
+    <div class="container-nav">   <!--logo部分-->
+        <div class="container">
+            <div class="logo">
+                <h1>
+                    <!--<a href="#" title="xx竞赛报名网">xx竞赛报名网</a>-->
+                    <img data-src="holder.js/200x70" alt="">
+                </h1>
             </div>
         </div>
     </div>
-    <div class="container-nav">   <!--logo部分-->
+    <div class="nav-title">    <!--身份大分类-->
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-4 logo">
-                    <h1>
-                        <!--<a href="#" title="xx竞赛报名网">xx竞赛报名网</a>-->
-                        <img data-src="holder.js/200x70" alt="">
-                    </h1>
-                </div>
-                <div class="col-md-8 col-sm-8 title">
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" ><a href="info.html">账号设置</a></li>
-                        <li role="presentation" ><a href="publisher.html">我是发布者</a></li>
-                        <li role="presentation" class="active"><a href="participants.html">我是参赛者</a></li>
-                    </ul>
-                </div>
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" ><a href="info.html">账号设置</a></li>
+                <li role="presentation" ><a href="publisher.html">我是发布者</a></li>
+                <li role="presentation" class="active"><a href="participants.html">我是参赛者</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="nav-other">   <!--跳转其他页部分-->
+        <div class="container">
+            <div class="">
+                <ul class="list-inline">
+                    <li>
+                        <ul class="list-inline">
+                            <li class=""><a href="../index/index.html">竞赛网首页</a>|</li>
+                            <li class=""><a href="../index/competition.html">竞赛大全</a>|</li>
+                            <li class=""><a href="../index/about.html">关于我们</a>|</li>
+                            <li class="dropdown">
+                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">默认标记为：我是参赛者<strong class="caret"></strong></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                                标记我为参赛者(我是参赛者)
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                标记我为发布者(我是发布者)
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li class="">
+                                        若选“我是雇主”那么进入管理中心，将默认加载[我是雇主]页面；否则为[我是威客]。
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="pull-right">
+                        <ul class="list-inline">
+                            <li>您好，0xx</li>
+                            <li class="">日期：2016年12月29日 星期四</li>
+                            <li class=""><a href="">注销</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 </div>
 <!--  header部分：top nav  end-->
 <!--  mian部分  start-->
-<div id="main-wrapper">
+<div id="content-wrapper">
    <div class="container">
        <div class="row">
            <div class="col-md-3 col-sm-3">
@@ -153,7 +184,63 @@
                </div>
            </div>
            <div class="col-md-9 col-sm-9 ">
-               main
+              <div class="main-header">
+                  <ol class="breadcrumb">
+                      <li><a href="#">我是威客</a></li>
+                      <li><a href="#">Library</a></li>
+                  </ol>
+              </div>
+               <div class="main-body">
+                   <div class="myinfo panel panel-danger">
+                       <div class="media panel-body">
+                           <a class="media-left " href="#">
+                               <img class="img-circle" data-src="holder.js/150x150" src="" alt="头像">
+                           </a>
+                           <div class="media-body media-middle">
+                               <h4 class="media-heading">用户名，欢迎回家[<a href="">修改</a>]</h4>
+                               <p>
+                                   <span>粉丝：0x</span>
+                                   <span>关注：0x</span>
+                                   <span>收藏：0x</span>
+                                   <span>参与竞赛：0</span>
+                               </p>
+                               <p>
+                                   <span>注册日期：xx年xx月xx日 xx：xx 星期x</span>
+                               </p>
+                               <p>
+                                   <span>登录次数：0x</span>
+                               </p>
+
+                           </div>
+                       </div>
+                   </div>
+                   <div class="mydynamic">
+                       <div class="panel panel-danger">
+                           <div class="panel-heading clearfix">
+                               <h3 class="panel-title pull-left">我的参赛动态</h3>
+                               <span class="pull-right"><a href="">参与项目</a></span>
+                           </div>
+                           <div class="panel-body">
+                               <p>
+                                   项目说明：0xx
+                               </p>
+                           </div>
+                           <!-- Table -->
+                           <table class="table">
+                               <tr>
+                                   <th>申请参与</th>
+                                   <th>系统审核通过</th>
+                                   <th>审核通过</th>
+                               </tr>
+                               <tr>
+                                   <td>0个</td>
+                                   <td>0个</td>
+                                   <td>0个</td>
+                               </tr>
+                           </table>
+                       </div>
+                   </div>
+               </div>
            </div>
        </div>
    </div>
